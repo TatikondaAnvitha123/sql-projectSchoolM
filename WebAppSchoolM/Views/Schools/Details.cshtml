@@ -1,0 +1,42 @@
+﻿@model WebAppSchoolM.Models.School
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>School</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.S_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_class)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_class)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_subject)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.S_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

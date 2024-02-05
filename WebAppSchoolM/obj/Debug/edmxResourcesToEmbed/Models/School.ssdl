@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolmangeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="S_id" />
+    </Key>
+    <Property Name="S_id" Type="int" Nullable="false" />
+    <Property Name="S_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="S_class" Type="varchar" MaxLength="50" />
+    <Property Name="S_subject" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="SchoolmangeModelStoreContainer">
+    <EntitySet Name="School" EntityType="Self.School" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
